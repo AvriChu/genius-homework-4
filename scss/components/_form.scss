@@ -1,0 +1,47 @@
+.tittle-form {
+  font-weight: 600;
+  font-size: 22px;
+}
+.input-info {
+  background: none;
+  padding: 18px 33px;
+  background-color: transparent;
+  border-radius: 32px;
+  border: 2px solid var(--small-color1);
+  font-family: inherit;
+  cursor: pointer;
+  max-width: 310px;
+  width: 100%;
+  color: var(--white-color);
+  transition: background-color 0.2s;
+}
+.input-info:hover,
+.input-info:focus {
+  background-color: var(--small-color1);
+}
+.input-info::placeholder {
+  color: var(--white-color);
+  font-size: 13px;
+}
+.input-info:focus {
+  outline: none;
+}
+.access-to-potitic {
+  color: var(--small-color1);
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  display: block;
+  max-width: 213px;
+  width: 100%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 310px;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}

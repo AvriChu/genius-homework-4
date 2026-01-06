@@ -1,0 +1,40 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(1, 31, 74, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  transition: visibility 0.3s, opacity 0.3s, transform 0.3s;
+}
+.modal-window {
+  border-radius: 48px;
+  width: 100%;
+  max-width: 723px;
+  max-height: 681px;
+  height: 100%;
+  background: url('../img/footer-background.svg'), var(--main-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 42px;
+  position: relative;
+}
+.modal-form .hero-tittle-form,
+.modal-form .tittle-form {
+  color: var(--white-color);
+  text-align: center;
+}
+.modal-form .hero-tittle-form {
+  font-weight: 700;
+  font-size: 64px;
+}
+.modal-form .tittle-form {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 32px;
+}

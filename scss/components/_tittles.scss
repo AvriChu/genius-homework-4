@@ -1,0 +1,11 @@
+.section-tittle {
+  font-weight: 700;
+  font-size: 64px;
+}
+.section-tittle .access,
+.tittle-form .access {
+  color: var(--tittle-color);
+}
+.section-tittle.center-tittle {
+  text-align: center;
+}

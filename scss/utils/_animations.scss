@@ -1,0 +1,11 @@
+@keyframes star-an {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  70% {
+    transform: rotate(-45deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}

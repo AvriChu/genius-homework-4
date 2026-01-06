@@ -1,0 +1,28 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+.nav-links-list {
+  display: flex;
+  flex-grow: 1;
+  gap: 56px;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-link {
+  font-size: 18px;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.nav-link a {
+  color: var(--main-color);
+  transition: color 0.2s;
+}
+.nav-link a:hover,
+.adress-link a:hover {
+  color: var(--tittle-color);
+}
+header .nav-link:hover {
+  transform: scale(1.1);
+}

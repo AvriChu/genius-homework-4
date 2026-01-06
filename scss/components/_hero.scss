@@ -1,0 +1,23 @@
+.main-tittle {
+  color: var(--tittle-color);
+  font-size: 140px;
+  line-height: 0.8;
+}
+.small-gray-text-header {
+  color: var(--small-color2);
+  font-size: 12px;
+  text-align: center;
+}
+.hero-small-text {
+  margin-bottom: 16px;
+}
+.section-form.hero-form {
+  padding-top: 123px;
+  padding-bottom: 127px;
+  background-image: url('../img/hero-background.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.container.hero-container {
+  padding-left: 100px;
+}

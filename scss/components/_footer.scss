@@ -1,0 +1,52 @@
+.small-politic-text:hover {
+  color: var(--tittle-color);
+}
+.small-politic-text {
+  margin-bottom: 16px;
+  display: block;
+}
+.secure-text {
+  color: var(--small-color1);
+  font-size: 13px;
+}
+footer .nav-link a,
+.small-politic-text,
+.adress-link a {
+  color: var(--white-color);
+  font-size: 16px;
+  transition: color 0.2s;
+}
+footer {
+  background: url('../img/footer-background.svg'), var(--main-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.bottles-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.footer-nav-address {
+  display: flex;
+  gap: 16px;
+}
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 16px;
+}
+.footer-nav ul,
+.footer-address ul {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-address li .footer-list-of-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}

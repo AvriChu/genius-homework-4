@@ -1,0 +1,36 @@
+.section-form.contacts-section {
+  padding-top: 48px;
+  padding-bottom: 96px;
+}
+.form-and-map {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+.how-to-find-us-bur {
+  background: url('../img/footer-background.svg'), var(--main-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 48px 56px;
+  background-size: cover;
+  border-radius: 32px;
+  max-width: 423px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.how-to-find-us-bur .tittle-form {
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 32px;
+}
+.google-map {
+  border-radius: 32px;
+  border: none;
+  flex-grow: 1;
+  max-width: 605px;
+  min-height: 481px;
+  width: 100%;
+}

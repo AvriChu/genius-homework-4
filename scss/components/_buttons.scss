@@ -1,0 +1,75 @@
+.button-with-arrow svg {
+  width: 22px;
+  height: 22px;
+}
+.button-with-arrow {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--main-color);
+  flex-shrink: 0;
+  transition: fill 0.2s, background-color 0.2s, border 0.2s;
+}
+.button-with-arrow:last-of-type {
+  transform: rotate(180deg);
+}
+.button-with-arrow:hover {
+  fill: var(--white-color);
+  background-color: var(--tittle-color);
+  border: 1px solid var(--white-color);
+}
+.button-order {
+  font-family: Roboto, sans-serif;
+  background-color: var(--tittle-color);
+  font-weight: 600;
+  color: var(--white-color);
+  border-radius: 32px;
+  border: 2px solid var(--tittle-color);
+  font-family: inherit;
+  cursor: pointer;
+  padding: 16px 32px;
+  font-size: 16px;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+.button-order:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+.order-button-and-small-text {
+  max-width: 240px;
+  width: 100%;
+}
+.form-container .button-order:hover {
+  background-color: transparent;
+  color: var(--white-color);
+  border: 2px solid var(--tittle-color);
+}
+.section-form.hero-form .button-order {
+  margin-bottom: 14px;
+}
+form .button-order {
+  margin-bottom: 8px;
+}
+.cross-button {
+  background: transparent;
+  position: absolute;
+  border: none;
+  right: 42px;
+  top: 42px;
+  fill: var(--white-color);
+  cursor: pointer;
+  transform: rotate(0deg) scale(1);
+  transition: transform 0.2s;
+}
+.cross-button:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+.cross-button svg {
+  width: 20px;
+  height: 20px;
+}
