@@ -24,17 +24,18 @@
   padding: 42px;
   position: relative;
 }
-.modal-form .hero-tittle-form,
-.modal-form .tittle-form {
-  color: var(--white-color);
-  text-align: center;
-}
-.modal-form .hero-tittle-form {
-  font-weight: 700;
-  font-size: 64px;
-}
-.modal-form .tittle-form {
-  font-weight: 600;
-  font-size: 22px;
-  margin-bottom: 32px;
+.modal-form {
+  &__tittle {
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--white-color);
+    text-align: center;
+  }
+  .tittle-form {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 32px;
+    color: var(--white-color);
+    text-align: center;
+  }
 }

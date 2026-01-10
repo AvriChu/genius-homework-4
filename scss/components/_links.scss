@@ -1,0 +1,15 @@
+.nav-link a {
+  color: var(--main-color);
+  transition: color 0.2s;
+  &:hover {
+    color: var(--tittle-color);
+  }
+}
+.adress-link a {
+  color: var(--white-color);
+  font-size: 16px;
+  transition: color 0.2s;
+  &:hover {
+    color: var(--tittle-color);
+  }
+}

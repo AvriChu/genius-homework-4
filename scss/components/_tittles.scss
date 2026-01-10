@@ -1,11 +1,13 @@
-.section-tittle {
-  font-weight: 700;
-  font-size: 64px;
+.section {
+  &__tittle {
+    font-weight: 700;
+    font-size: 64px;
+    &--center {
+      text-align: center;
+    }
+  }
 }
-.section-tittle .access,
-.tittle-form .access {
-  color: var(--tittle-color);
-}
-.section-tittle.center-tittle {
-  text-align: center;
+.tittle-form {
+  font-weight: 600;
+  font-size: 22px;
 }

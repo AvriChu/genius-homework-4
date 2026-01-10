@@ -1,52 +1,72 @@
-.small-politic-text:hover {
-  color: var(--tittle-color);
-}
-.small-politic-text {
-  margin-bottom: 16px;
-  display: block;
-}
-.secure-text {
-  color: var(--small-color1);
-  font-size: 13px;
-}
-footer .nav-link a,
-.small-politic-text,
-.adress-link a {
-  color: var(--white-color);
-  font-size: 16px;
-  transition: color 0.2s;
-}
-footer {
+.footer {
   background: url('../img/footer-background.svg'), var(--main-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-}
-.bottles-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.footer-nav-address {
-  display: flex;
-  gap: 16px;
-}
-.footer-nav,
-.footer-address {
-  flex-basis: 50%;
-  display: flex;
-  gap: 16px;
-}
-.footer-nav ul,
-.footer-address ul {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.footer-address li .footer-list-of-icons {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
+  &__nav-address {
+    display: flex;
+    gap: 16px;
+  }
+  &__nav,
+  &__address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 16px;
+  }
+  &__nav ul,
+  &__address ul {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__list-of-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  &__politic:hover {
+    color: var(--tittle-color);
+  }
+  &__politic {
+    margin-bottom: 16px;
+    display: block;
+    color: var(--white-color);
+    font-size: 16px;
+    transition: color 0.2s;
+  }
+  .nav-link a {
+    color: var(--white-color);
+    font-size: 16px;
+    transition: color 0.2s;
+  }
+  &__secure {
+    color: var(--small-color1);
+    font-size: 13px;
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &__logo {
+    flex-grow: 1;
+  }
+  &__address &__list-of-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  &__icon-social:hover svg {
+    fill: var(--tittle-color);
+    transform: scale(1.1);
+  }
+  &__icon-social svg {
+    height: 42px;
+    width: 42px;
+    transform: scale(1);
+    transition: fill 0.2s, transform 0.2s;
+    fill: var(--white-color);
+  }
 }

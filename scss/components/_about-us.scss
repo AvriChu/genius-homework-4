@@ -1,38 +1,32 @@
-.section-form.about-us-section {
+.about-us {
   padding-top: 40px;
-}
-.about-us-content {
-  max-width: 710px;
-}
-.section-form.about-us-section .change-text {
-  margin-bottom: 40px;
-}
-.container.about-us-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-}
-.about-us-container .section-tittle .access {
-  text-transform: capitalize;
-}
-.about-us-imgs {
-  position: relative;
-}
-.change-text {
-  font-size: 22px;
-  line-height: 1.73;
-}
-.change-text b {
-  font-weight: 600;
-  text-transform: capitalize;
-}
-.person-img {
-  border-radius: 50%;
-  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
-}
-.person-img:first-of-type {
-  margin-bottom: 40px;
-}
-.person-img:nth-of-type(2) {
-  margin-left: 176px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  &__content {
+    max-width: 710px;
+  }
+  &__text {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 1.73;
+  }
+  &__text b {
+    font-weight: 600;
+  }
+  &__imgs {
+    position: relative;
+  }
+  &__img {
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+  }
+  &__img:first-of-type {
+    margin-bottom: 40px;
+  }
+  &__img:nth-of-type(2) {
+    margin-left: 176px;
+  }
 }
