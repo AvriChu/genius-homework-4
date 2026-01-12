@@ -36,7 +36,7 @@
             </li>
             <li class="nav-link"><a href="#contacts-section">Контакти</a></li>
           </ul>
-          <ul class="list-of-icons">
+          <ul class="header__list-of-icons list-of-icons">
             <li>
               <a
                 class="header__icon-social"
@@ -61,6 +61,54 @@
               </a>
             </li>
           </ul>
+          <button type="button" class="header__burger-button menu-open-btn">
+            <img src="./img/burger-button.svg" alt="Кнопка Бургер" />
+          </button>
+          <div class="mobile-menu">
+            <a href="#"
+              ><img
+                class="header-logo"
+                src="./img/logo.svg"
+                alt="Лого косметологічної клініки"
+            /></a>
+            <button class="cross-button menu-cross-button" type="button">
+              <svg><use href="./img/symbol-defs.svg#icon-cross"></use></svg>
+            </button>
+            <ul class="mobile-menu__links">
+              <li class="nav-link">
+                <a href="#about-us-section">Про нас</a>
+              </li>
+              <li class="nav-link"><a href="#why-us-section">Чому ми</a></li>
+              <li class="nav-link">
+                <a href="#procedures-section">Наші процедури</a>
+              </li>
+              <li class="nav-link"><a href="#contacts-section">Контакти</a></li>
+            </ul>
+            <ul class="mobile-menu__list-of-icons">
+              <li>
+                <a
+                  class="mobile-menu__icon-social"
+                  href="tel:+380960000007"
+                  target="_blank"
+                >
+                  <svg>
+                    <use href="./img/symbol-defs.svg#icon-phone"></use></svg
+                ></a>
+              </li>
+              <li>
+                <a class="mobile-menu__icon-social" href="#" target="_blank">
+                  <svg>
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li>
+                <a class="mobile-menu__icon-social" href="#" target="_blank">
+                  <svg>
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -68,7 +116,7 @@
       <section class="section hero">
         <div class="container hero__container">
           <p class="hero__small-text">Косметологічна клініка</p>
-          <h1 class="hero__tittle" lang="en">Beauty<br />Zone</h1>
+          <h1 class="hero__tittle" lang="en">Beauty Zone</h1>
           <div class="hero__box">
             <button class="button-order open-btn" type="button">
               Замовити дзвінок
@@ -102,11 +150,13 @@
             <img
               class="about-us__img"
               src="./img/person1.jpg"
+              srcset="./img/person1.jpg 1x, ./img/person1@2x.jpg 2x"
               alt="Фотографія людини до процедури"
             />
             <img
               class="about-us__img"
               src="./img/person2.jpg"
+              srcset="./img/person2.jpg 1x, ./img/person2@2x.jpg 2x"
               alt="Фотографія людини після процедури"
             />
             <svg class="star">
@@ -121,6 +171,7 @@
           </div>
         </div>
       </section>
+      <!--
       <div class="wave-background">
         <section class="section why-us" id="why-us-section">
           <div class="container">
@@ -288,7 +339,7 @@
                   id="user-email"
                   required
                 />
-                <button class="button-order" type="submit">
+                <button class="button-order modal-button" type="submit">
                   Записатись безкоштовно
                 </button>
               </form>
@@ -447,7 +498,7 @@
           </a>
         </div>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <script src="./js/script.js"></script>
   </body>
 </html>

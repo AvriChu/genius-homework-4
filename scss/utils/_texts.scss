@@ -3,4 +3,7 @@
 }
 .access {
   color: var(--tittle-color);
+  @media screen and (max-width: $br-tablet) {
+    font-weight: 700;
+  }
 }

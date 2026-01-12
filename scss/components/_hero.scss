@@ -4,27 +4,67 @@
   background-image: url('../img/hero-background.png');
   background-repeat: no-repeat;
   background-position: right top;
+  background-size: cover;
+  @media screen and (max-width: $br-tablet) {
+    padding-top: 71px;
+  }
+  @media screen and (max-width: 400px) {
+    background-image: url('../img/hero-mobile-background.png');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../img/hero-mobile-background@2.png');
+  }
   &__container {
     padding-left: 100px;
+    @media screen and (max-width: $br-tablet) {
+      padding-left: 16px;
+    }
   }
   &__small-text {
     margin-bottom: 16px;
+    @media screen and (max-width: $br-tablet) {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 0;
+    }
   }
   &__tittle {
     color: var(--tittle-color);
     font-size: 140px;
     line-height: 0.8;
+    max-width: 530px;
+    width: 100%;
+    @media screen and (max-width: $br-tablet) {
+      text-align: center;
+      font-size: 54px;
+      line-height: 0.85;
+      max-width: 100%;
+      margin-bottom: 32px;
+    }
   }
   &__small-gray-text {
     color: var(--small-color2);
     font-size: 12px;
     text-align: center;
+    @media screen and (max-width: $br-tablet) {
+      font-size: 11px;
+      line-height: 1.64;
+    }
   }
   &__box {
-    max-width: 240px;
+    max-width: 238px;
     width: 100%;
+    @media screen and (max-width: $br-tablet) {
+      margin: 0 auto;
+      max-width: 200px;
+    }
   }
   &__box .button-order {
     margin-bottom: 14px;
+    @media screen and (max-width: $br-tablet) {
+      margin-bottom: 8px;
+    }
   }
 }

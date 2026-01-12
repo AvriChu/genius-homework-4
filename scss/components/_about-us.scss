@@ -12,9 +12,18 @@
     margin-bottom: 40px;
     font-size: 22px;
     line-height: 1.73;
+    @media screen and (max-width: $br-tablet) {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
   }
   &__text b {
     font-weight: 600;
+    @media screen and (max-width: $br-tablet) {
+      font-weight: 700;
+    }
   }
   &__imgs {
     position: relative;
@@ -22,6 +31,9 @@
   &__img {
     border-radius: 50%;
     box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+    @media screen and (max-width: $br-dekstop) {
+      display: none;
+    }
   }
   &__img:first-of-type {
     margin-bottom: 40px;

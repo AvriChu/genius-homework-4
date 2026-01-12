@@ -1,0 +1,53 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px 20px;
+  background-color: var(--white-color);
+  transform: translateX(100%);
+  transition: transform 0.2s;
+  display: none;
+  &__list-of-icons {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__icon-social svg {
+    fill: var(--main-color);
+    height: 32px;
+    width: 32px;
+    transform: scale(1);
+    transition: transform 0.2s;
+  }
+  &__icon-social:hover svg {
+    fill: var(--tittle-color);
+    transform: scale(1.1);
+  }
+  &__links {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 17px;
+  }
+  &__links a {
+    font-size: 14px;
+  }
+  &.is-open {
+    transform: translateX(0);
+    display: block;
+  }
+  & .header-logo {
+    margin-bottom: 32px;
+  }
+}
+.menu-cross-button {
+  right: 20px;
+  top: 16px;
+  & svg {
+    fill: var(--main-color);
+  }
+}
