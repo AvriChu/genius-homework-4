@@ -1,13 +1,14 @@
-.nav-link {
-  a {
-    display: inline-block;
-    color: var(--main-color);
-    transition: transform 0.2s, color 0.2s;
-  }
-
-  a:hover {
-    transform: scale(1.1);
-    color: var(--tittle-color);
+.footer,
+.header {
+  .nav-link {
+    a {
+      display: inline-block;
+      color: var(--main-color);
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: var(--tittle-color);
+    }
   }
 }
 .adress-link a {

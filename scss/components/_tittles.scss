@@ -1,15 +1,20 @@
 .section {
   &__tittle {
-    font-weight: 700;
-    font-size: 64px;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: 'Roboto', system-ui;
+    margin-bottom: 24px;
     &--center {
       text-align: center;
     }
-    @media screen and (max-width: $br-tablet) {
-      font-weight: 500;
-      font-size: 32px;
-      font-family: 'Roboto', sans-serif;
-      margin-bottom: 24px;
+    @media screen and (min-width: $br-tablet) {
+      font-weight: 700;
+      font-size: 64px;
+      font-family: 'Play', sans-serif;
+      margin-bottom: 40px;
+    }
+    & .access.capitalize {
+      font-weight: 700;
     }
   }
 }

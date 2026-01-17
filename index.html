@@ -15,6 +15,10 @@
       href="./img/web-site_icon.svg"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -22,7 +26,7 @@
         <nav class="header__nav">
           <a href="#"
             ><img
-              class="header-logo"
+              class="logo"
               src="./img/logo.svg"
               alt="Лого косметологічної клініки"
           /></a>
@@ -67,7 +71,7 @@
           <div class="mobile-menu">
             <a href="#"
               ><img
-                class="header-logo"
+                class="logo"
                 src="./img/logo.svg"
                 alt="Лого косметологічної клініки"
             /></a>
@@ -171,7 +175,6 @@
           </div>
         </div>
       </section>
-      <!--
       <div class="wave-background">
         <section class="section why-us" id="why-us-section">
           <div class="container">
@@ -215,37 +218,49 @@
               Наші <span class="access">процедури</span>
             </h2>
             <div class="procedures__lister">
-              <button type="button" class="button-with-arrow">
+              <button type="button" class="button-with-arrow left">
                 <svg>
                   <use href="./img/symbol-defs.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <div class="procedures__list">
-                <ul class="procedures__article-list">
-                  <li class="servise-box">
+              <div class="procedures__list swiper">
+                <ul class="procedures__article-list swiper-wrapper">
+                  <li class="servise-box swiper-slide">
                     <article class="servise-box__article">
                       <img
                         class="servise-box__img"
                         src="./img/services1.jpg"
+                        srcset="
+                          ./img/services1.jpg    1x,
+                          ./img/services1@2x.jpg 2x
+                        "
                         alt="Фото маски для обличчя"
                       />
                       <p class="servise-box__text">Маски для обличчя</p>
                     </article>
                   </li>
-                  <li class="servise-box">
+                  <li class="servise-box swiper-slide">
                     <article class="servise-box__article">
                       <img
                         class="servise-box__img"
+                        srcset="
+                          ./img/services2.jpg    1x,
+                          ./img/services2@2x.jpg 2x
+                        "
                         src="./img/services2.jpg"
                         alt="Фото ін'єкції для обличчя"
                       />
                       <p class="servise-box__text">Ін'єкції для обличчя</p>
                     </article>
                   </li>
-                  <li class="servise-box">
+                  <li class="servise-box swiper-slide">
                     <article class="servise-box__article">
                       <img
                         class="servise-box__img"
+                        srcset="
+                          ./img/services3.jpg    1x,
+                          ./img/services3@2x.jpg 2x
+                        "
                         src="./img/services3.jpg"
                         alt="Фото очищення обличчя"
                       />
@@ -254,29 +269,17 @@
                   </li>
                 </ul>
               </div>
-              <button type="button" class="button-with-arrow">
+              <button type="button" class="button-with-arrow right">
                 <svg>
                   <use href="./img/symbol-defs.svg#icon-arrow"></use>
                 </svg>
               </button>
             </div>
-            <ul class="list-of-dots">
-              <li>
-                <svg width="11" height="11" viewBox="0 0 11 11">
-                  <circle cx="5.5" cy="5.5" r="5.5" />
-                </svg>
-              </li>
-              <li>
-                <svg width="11" height="11" viewBox="0 0 11 11">
-                  <circle cx="5.5" cy="5.5" r="5.5" />
-                </svg>
-              </li>
-              <li>
-                <svg width="11" height="11" viewBox="0 0 11 11">
-                  <circle cx="5.5" cy="5.5" r="5.5" />
-                </svg>
-              </li>
-            </ul>
+            <div class="pagination">
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+            </div>
           </div>
         </section>
       </div>
@@ -301,7 +304,6 @@
               <form
                 class="form-container"
                 name="contact-form"
-                action=""
                 autocapitalize="on"
               >
                 <label for="user-name" class="visually-hidden"
@@ -360,7 +362,7 @@
             <div class="footer__logo">
               <a href="#"
                 ><img
-                  class="header-logo"
+                  class="logo"
                   src="./img/logo.svg"
                   alt="Лого косметологічної клініки"
               /></a>
@@ -390,7 +392,7 @@
                 >
               </li>
               <li>
-                <ul class="footer__list-of-icons">
+                <ul class="footer__list-of-icons footer__list-of-icons--first">
                   <li>
                     <a
                       class="footer__icon-social"
@@ -424,20 +426,49 @@
               <a class="footer__politic" href="#" target="_blank"
                 >Політика конфіденційності</a
               >
+              <ul class="footer__list-of-icons footer__list-of-icons--second">
+                <li>
+                  <a
+                    class="footer__icon-social"
+                    href="tel:+380960000007"
+                    target="_blank"
+                  >
+                    <svg>
+                      <use href="./img/symbol-defs.svg#icon-phone"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a class="footer__icon-social" href="#" target="_blank">
+                    <svg>
+                      <use
+                        href="./img/symbol-defs.svg#icon-facebook"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a class="footer__icon-social" href="#" target="_blank">
+                    <svg>
+                      <use
+                        href="./img/symbol-defs.svg#icon-instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+              </ul>
               <p class="footer__secure">&copy; 2022 Дані захищені</p>
             </div>
           </address>
         </div>
         <img
           class="footer__img"
-          src="./img/some-bottles.webp"
+          src="./img/some-bottles.png"
+          srcset="./img/some-bottles.png 1x, ./img/some-bottles@2x.png 2x"
           alt="Декілька пляшичок"
         />
       </div>
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal-window">
-        <button class="cross-button" type="button">
+        <button class="cross-button modal-window--cross-button" type="button">
           <svg><use href="./img/symbol-defs.svg#icon-cross"></use></svg>
         </button>
         <div class="modal-form">
@@ -446,12 +477,7 @@
             Запишіться <span class="access">безкоштовно</span><br />та отримайте
             подарунок
           </h3>
-          <form
-            class="form-container"
-            name="modal-form"
-            action=""
-            autocapitalize="on"
-          >
+          <form class="form-container" name="modal-form" autocapitalize="on">
             <label for="user-name" class="visually-hidden"
               >Ваше ім'я та прізвище</label
             >
@@ -498,7 +524,10 @@
           </a>
         </div>
       </div>
-    </div> -->
-    <script src="./js/script.js"></script>
+    </div>
+    <script src="./js/modal-script.js"></script>
+    <script src="./js/mobile-menu-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
   </body>
 </html>

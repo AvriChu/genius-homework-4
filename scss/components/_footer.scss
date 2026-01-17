@@ -4,15 +4,43 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  padding-top: 32px;
+  @media screen and (min-width: $br-tablet) {
+    padding-top: 56px;
+  }
   &__nav-address {
     display: flex;
     gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $br-tablet) {
+      flex-direction: row;
+      align-items: normal;
+    }
   }
   &__nav,
   &__address {
     flex-basis: 50%;
     display: flex;
     gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $br-tablet) {
+      flex-direction: row;
+      align-items: normal;
+    }
+  }
+  &__nav {
+    gap: 42px;
+    @media screen and (min-width: $br-tablet) {
+      gap: 16px;
+    }
+  }
+  &__address {
+    gap: 0;
+    @media screen and (min-width: $br-tablet) {
+      gap: 16px;
+    }
   }
   &__nav ul,
   &__address ul {
@@ -20,6 +48,16 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
+    @media screen and (min-width: $br-tablet) {
+      align-items: normal;
+    }
+  }
+  .adress-link {
+    display: none;
+    @media screen and (min-width: $br-tablet) {
+      display: list-item;
+    }
   }
   &__list-of-icons {
     display: flex;
@@ -33,40 +71,73 @@
     margin-bottom: 16px;
     display: block;
     color: var(--white-color);
-    font-size: 16px;
+    font-size: 14px;
     transition: color 0.2s;
+    @media screen and (min-width: $br-tablet) {
+      font-size: 16px;
+    }
   }
   .nav-link a {
     color: var(--white-color);
-    font-size: 16px;
-    transition: color 0.2s;
+    font-size: 14px;
+    @media screen and (min-width: $br-tablet) {
+      font-size: 16px;
+    }
   }
   &__secure {
     color: var(--small-color1);
-    font-size: 13px;
+    font-size: 12px;
+    text-align: center;
+    @media screen and (min-width: $br-tablet) {
+      text-align: left;
+      font-size: 13px;
+    }
   }
   &__img {
     position: absolute;
     right: 0;
     bottom: 0;
+    display: none;
+    @media screen and (min-width: 880px) {
+      display: block;
+    }
   }
   &__logo {
     flex-grow: 1;
   }
   &__address &__list-of-icons {
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 24px;
+    &--first {
+      @media screen and (min-width: $br-tablet) {
+        display: flex;
+      }
+    }
+    &--second {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8px;
+      @media screen and (min-width: $br-tablet) {
+        display: none;
+      }
+    }
   }
-  &__icon-social:hover svg {
-    fill: var(--tittle-color);
-    transform: scale(1.1);
-  }
-  &__icon-social svg {
-    height: 42px;
-    width: 42px;
-    transform: scale(1);
-    transition: fill 0.2s, transform 0.2s;
-    fill: var(--white-color);
+  &__icon-social {
+    &:hover svg {
+      fill: var(--tittle-color);
+      transform: scale(1.1);
+    }
+    & svg {
+      height: 32px;
+      width: 32px;
+      transform: scale(1);
+      transition: fill 0.2s, transform 0.2s;
+      fill: var(--white-color);
+      @media screen and (min-width: $br-tablet) {
+        height: 42px;
+        width: 42px;
+      }
+    }
   }
 }

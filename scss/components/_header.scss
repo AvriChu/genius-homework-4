@@ -3,13 +3,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 32px 0;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.25);
-  @media screen and (max-width: $br-tablet) {
-    padding: 16px 0;
-    backdrop-filter: none;
-    background: none;
+  padding: 16px 0;
+  backdrop-filter: none;
+  background: none;
+  @media screen and (min-width: 860px) {
+    padding: 32px 0;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
   }
   &__nav {
     display: flex;
@@ -18,44 +18,48 @@
     justify-content: space-between;
   }
   &__menu {
-    display: flex;
+    display: none;
     flex-grow: 1;
     gap: 56px;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width: $br-tablet) {
-      display: none;
+    @media screen and (min-width: 860px) {
+      display: flex;
+    }
+    & .nav-link {
+      font-size: 18px;
     }
   }
   &__list-of-icons {
-    @media screen and (max-width: $br-tablet) {
-      display: none;
+    display: none;
+    @media screen and (min-width: 860px) {
+      display: flex;
     }
   }
-  &__menu .nav-link {
-    font-size: 18px;
+  &__icon-social {
+    & svg {
+      height: 32px;
+      width: 32px;
+      transform: scale(1);
+      transition: fill 0.2s, transform 0.2s;
+      fill: var(--main-color);
+    }
+    &:hover svg {
+      fill: var(--tittle-color);
+      transform: scale(1.1);
+    }
   }
-  &__icon-social svg {
-    height: 32px;
-    width: 32px;
-    transform: scale(1);
-    transition: fill 0.2s, transform 0.2s;
-    fill: var(--main-color);
-  }
-  &__icon-social:hover svg {
-    fill: var(--tittle-color);
-    transform: scale(1.1);
-  }
+
   &__burger-button {
     border: none;
     background-color: transparent;
     height: 24px;
     width: 24px;
-    display: none;
+    display: block;
     transform: scale(1);
     transition: transform 0.2s;
-    @media screen and (max-width: $br-tablet) {
-      display: block;
+    @media screen and (min-width: 860px) {
+      display: none;
     }
     &:hover {
       transform: scale(1.1);

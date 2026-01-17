@@ -1,11 +1,14 @@
 .why-us {
-  padding: 176px 90px 48px 90px;
+  padding: 106px 16px 40px 16px;
+  @media screen and (min-width: $br-tablet) {
+    padding: 176px 90px 48px 90px;
+  }
   .section-tittle {
     margin-bottom: 48px;
   }
   &__article-list {
     display: flex;
-    gap: 56px;
+    gap: 16px 56px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -15,21 +18,24 @@
     border-radius: 32px;
     box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
     padding: 24px 32px;
-    height: 181px;
-    width: 316px;
+    max-height: 181px;
+    max-width: 316px;
+    height: 100%;
+    width: 100%;
     background-color: var(--white-color);
     transform: scale(1);
     transition: transform 0.2s;
-  }
-  &__info:hover {
-    transform: scale(1.1);
-  }
-  &__info svg {
-    height: 48px;
-    width: 48px;
-    fill: var(--tittle-color);
-    margin: 0 auto 8px auto;
-    display: block;
+    display: inline-table;
+    &:hover {
+      transform: scale(1.1);
+    }
+    & svg {
+      height: 48px;
+      width: 48px;
+      fill: var(--tittle-color);
+      margin: 0 auto 8px auto;
+      display: block;
+    }
   }
   &__text {
     color: var(--black-color);

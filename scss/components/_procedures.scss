@@ -1,54 +1,63 @@
 .procedures {
-  padding: 48px 0;
+  padding: 0;
+  @media screen and (min-width: $br-tablet) {
+    padding: 48px 0;
+  }
   &__lister {
     display: flex;
     gap: 32px;
     align-items: center;
   }
   &__list {
-    display: flex;
-    gap: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    @media screen and (min-width: $br-tablet) {
+      margin-bottom: 32px;
+    }
   }
   &__article-list {
-    display: flex;
-    gap: 16px;
+    align-items: stretch;
   }
 }
 
 .servise-box {
-  flex-basis: calc((100% - 32px) / 3);
+  height: auto;
   &__text {
     color: var(--white-color);
-    font-size: 22px;
     line-height: 1.18;
-    padding: 372px 77px 32px 115px;
+    font-size: 20px;
+    padding: 344px 72px 24px 112px;
     text-align: center;
     position: relative;
     z-index: 3;
+    @media screen and (min-width: $br-dekstop) {
+      font-size: 22px;
+      padding: 372px 77px 32px 115px;
+    }
   }
   &__article {
     position: relative;
+    max-height: 456px;
     height: 100%;
     overflow: hidden;
     transform: scale(1);
     border-radius: 4px 120px;
     transition: transform 0.2s;
-  }
-  &__article::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(1, 28, 68, 0) 47.4%,
-      rgba(1, 28, 68, 0.73) 82.66%,
-      #011c44 99.06%
-    );
-    z-index: 2;
-  }
-  &__article:hover {
-    transform: scale(1.05);
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(1, 28, 68, 0) 47.4%,
+        rgba(1, 28, 68, 0.73) 82.66%,
+        #011c44 99.06%
+      );
+      z-index: 2;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &__img {
     border-radius: 4px 120px;
