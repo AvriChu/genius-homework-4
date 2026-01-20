@@ -36,6 +36,7 @@
     }
   }
   &__article {
+    max-width: 100%;
     position: relative;
     max-height: 456px;
     height: 100%;
@@ -43,6 +44,9 @@
     transform: scale(1);
     border-radius: 4px 120px;
     transition: transform 0.2s;
+    @media screen and (min-width: $br-tablet) {
+      max-width: 344px;
+    }
     &::before {
       content: '';
       position: absolute;
