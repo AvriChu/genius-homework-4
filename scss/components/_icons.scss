@@ -59,18 +59,19 @@
   &::before {
     content: '';
     position: absolute;
-    top: 40px;
+    top: -160px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     height: 2550px;
     background-image: url('../img/waves-background.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
     z-index: -1;
     @media screen and (min-width: $br-tablet) {
-      top: 0;
+      top: 0px;
+      background-size: 100% 1506px;
     }
   }
 }

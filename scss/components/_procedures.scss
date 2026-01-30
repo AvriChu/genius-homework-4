@@ -26,13 +26,14 @@
     color: var(--white-color);
     line-height: 1.18;
     font-size: 20px;
-    padding: 344px 72px 24px 112px;
+    padding: 344px 72px 0px 112px;
     text-align: center;
     position: relative;
     z-index: 3;
+    height: 456px;
     @media screen and (min-width: $br-dekstop) {
       font-size: 22px;
-      padding: 372px 77px 32px 115px;
+      padding: 372px 77px 0px 115px;
     }
   }
   &__article {
